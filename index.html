@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<title>RESORTS AND MORE!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+<div class="w3-container">
+    <center><h2>Gemma's favorites place in south Cebu!</h2></center>
+    <center><b><p>Welcome to those who believe in the power of dreams and who would like to join me in my exploration of life.
+
+</div>
+
+<div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="https://superbsongs.files.wordpress.com/2011/03/welcome-beach1.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    WELCOME
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="https://www.dasiatravels.com/wp-content/uploads/2019/04/Kawasan-Falls.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    Kawasan Falls in Badian, Cebu.
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="http://www.pinaytravelista.com/wp-content/uploads/2016/01/Lambug-Beach-Badian-Cebu.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    Lambug Beach in Badian, Cebu.
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="http://travelwithoutamap.com/wp-content/uploads/2017/01/osmena-peak-in-cebu.jpg" style="width:100%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+    Osmena Peak in Dalaguete, Cebu.
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="https://www.travelingcebu.com/images/swimming-pool-moalboal-resort.jpg" style="width:100%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    Moalboal Beach Resorts.
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
